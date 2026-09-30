@@ -53,12 +53,15 @@
                  <p>Bem vindos ao site e se divirtam aprendendo mais sobre Esportes e lutas</p>
                  <p class="artigo-autor">Por : Victor Emanuel</p>
                  <button>❤️<span>0</span></button>
+                 <button>😍<span>0</span></button>
+
              </div>
         </main>
 </body>
 
 <script>
-const botao = document.querySelector("button");
+const botoes = document.querySelectorAll("main button");
+botoes.forEach(function(botao) {
 botao.addEvenlistener("click,botaoclicado");
 function botaoclicado(){
 
@@ -66,5 +69,6 @@ function botaoclicado(){
 let texto = botao.querySelector("span")
 texto.texctContent++;
 }
+});
 </script>
 </html>
