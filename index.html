@@ -1,74 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>site</title>
-        <style>
-            header{
-                background-color: (#13cccc);
-                color: rgb(91, 173, 240);
-              text-align: center;
-             max-width: 800px;
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>site</title>
+    <style>
+        header {
+            background-color: (#13cccc);
+            color: rgb(91, 173, 240);
+            text-align: center;
+            max-width: 800px;
             margin: 0 auto;
             border: 5px solid rgb(3, 3, 85);
-             padding: 16px;
-             
-            }
+            padding: 16px;
+
+        }
 
 
-        main{
+        main {
 
-        background-color: rgb(10, 200, 225);
-         color: rgb(44, 104, 153);
-              text-align: center;
-             max-width: 800px;
+            background-color: rgb(10, 200, 225);
+            color: rgb(44, 104, 153);
+            text-align: center;
+            max-width: 800px;
             margin: 0 auto;
             border: 5px solid rgb(3, 3, 20);
-             padding: 16px;
-             display: flex;
+            padding: 16px;
+            display: flex;
         }
-        img{
-        width: 450px;
-        height: 260px;
+
+        img {
+            width: 450px;
+            height: 260px;
         }
-        .artigo-autor{
+
+        .artigo-autor {
             font-weight: bold;
 
         }
+    </style>
 
-        </style>
+</head>
 
-    </head>
-    <body>
-        <header>
-            <h1>Esportes e Lutas</h1>
-            <p>Conheça mais sobre os Esportes e Lutas</p>
-        </header>
+<body>
+    <header>
+        <h1>Esportes e Lutas</h1>
+        <p>Conheça mais sobre os Esportes e Lutas</p>
+    </header>
 
-        <main>
-            <img src="Gemini_Generated_Image_hh8y38hh8y38hh8y.png" alt="Homem treinando boxe e acertando um saco de pancadas em uma academia moderna, com uma piscina ao fundo separada por uma parede de vidro onde um atleta aparece nadando.">
-             <div>
-                 <h2></h2>
-                 <p>Bem vindos ao site e se divirtam aprendendo mais sobre Esportes e lutas</p>
-                 <p class="artigo-autor">Por : Victor Emanuel</p>
-                 <button>❤️<span>0</span></button>
-                 <button>😍<span>0</span></button>
+    <main>
+        <img src="Gemini_Generated_Image_hh8y38hh8y38hh8y.png"
+            alt="Homem treinando boxe e acertando um saco de pancadas em uma academia moderna, com uma piscina ao fundo separada por uma parede de vidro onde um atleta aparece nadando.">
+        <div>
+            <h2></h2>
+            <p>Bem vindos ao site e se divirtam aprendendo mais sobre Esportes e lutas</p>
+            <p class="artigo-autor">Por : Victor Emanuel</p>
+            <button>❤️<span>0</span></button>
+            <button>😍<span>0</span></button>
 
-             </div>
-        </main>
+        </div>
+    </main>
 </body>
 
 <script>
-const botoes = document.querySelectorAll("main button");
-botoes.forEach(function(botao) {
-botao.addEvenlistener("click,botaoclicado");
-function botaoclicado(){
+    const botoes = document.querySelectorAll("main button");
+    botoes.forEach(function (botao) {
+        botao.addEventListener("click",botaoClicado);
+        function botaoClicado() {
 
- console.log("fui clicado")
-let texto = botao.querySelector("span")
-texto.texctContent++;
-}
-});
+            console.log("fui clicado");
+            let texto = botao.querySelector("span");
+            texto.textContent++;
+        }
+    });
 </script>
+
 </html>
